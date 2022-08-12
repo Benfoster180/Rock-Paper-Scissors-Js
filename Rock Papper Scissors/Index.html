@@ -1,83 +1,50 @@
-<div class="container"></div>
+<!DOCTYPE html>
 <script src="script.js"></script>
 <link rel="stylesheet" href="stylesheet.css">
+<html>
+<head>
+<!--This is the Main title-->    
+<h1 id="Rock_Papper_Scissors_main_title"> <span>Rock</span> <span>Paper</span> <span>Scissors</span> </h1>
+<title>Rock Papper Scissors</title>
+</head>
 
-<!--Titiles-->
-<table>
-    <th class="H1R">ROCK </th>
-    <th>  </th>
-    <th class="H1P"> PAPER </th>
-    <th>  </th>
-    <th class="H1S"> SCISSORS</th>
-</table>
+<body>
 
+<h2 id="Game_Played_text">Games Played!</h2>
 
+<p id="Number_of_Games_Played" class="Gamesplayed">0</p>
 
-<h2 class="Sub_title">Games Played!</h2>
+<p class="Gamesplayed">Winner <span id="game_result" ></span></p>
 
+<p class="Gamesplayed">Player Played <span id="What_did_the_player_use" ></span></p>
 
-<p id="play" class="Gamesplayed"></p>
-
-
-
-<Table>
-        <th>Winner</th>
-        <th id="game_result"></th>
-</Table>
-
-<table>
-
-<tr>
-    <th>Bot Played</th>
-    <th id="Bot_move"></th>
-</tr>
-<tr>
-    <th>You Played</th>
-    <th id="You_Played"></th>
-</tr>
-
-</table>
+<p class="Gamesplayed">Bot Played <span id="What_did_the_Bot_Use" ></span></p>
 
 
-
-
-
-
-
-<p id="game_result"></p>
-
-<!--Scoreboard-->
-<table>
+<table id="Scoreboard">
     <tr>
-      <th class="win">Win</th>
-      <th class="draw">Draw</th>
-      <th class="lose">Lose</th>
+      <th class="Win_Formatting">Win</th>
+      <th class="Draw_Formatting">Draw</th>
+      <th class="Lose_Formatting">Lose</th>
     </tr>
 
     <tr>
-        <th id="Win" class="win">0</th>
-        <th id="Draw" class="draw">0</th>
-        <th id="Lose" class="lose">0</th>
+        <th id="Number_of_Wins" class="Win_Formatting">0</th>
+        <th id="Number_of_Draws" class="Draw_Formatting">0</th>
+        <th id="Number_of_Loses" class="Lose_Formatting">0</th>
     </tr>
 
 </table>
 
-
-<table>
+<table id="Buttons">
     <th>
-        
-    <button  onclick="Papper()" class="Papper" ></button> 
-    <button  onclick="Scissors()" class="Scissors"></button>
-    <button  onclick="Rock()" class="Rock"></button>
+    <button  onclick="Papper_Button_Clicked_Event()" class="Papper" ></button> 
+    <button  onclick="Scissors_Button_Clicked_Event()" class="Scissors"></button>
+    <button  onclick="Rock_Button_Clicked_Event()" class="Rock"></button>
     </th>
 </table>
 
 
-<table>
-    <th>
-        Win rate: 
-    </th>
-    <th id="kd">
-        
-    </th>
-</table>
+<p class="Gamesplayed">  WIN/LOSE <span id="Win_to_loss_ratio"></span></p>
+</body>
+</html>
